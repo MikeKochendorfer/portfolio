@@ -1,19 +1,20 @@
 import Link from "next/link";
+import styles from "../styles/HeaderStyles.module.css";
 
 export default function Header(): JSX.Element {
   return (
-    <nav>
+    <nav className={styles.nav}>
       <Link href="/" passHref>
-        <a>Home</a>
+        <a className={styles.navLink}>Home</a>
       </Link>
       <Link href="/about" passHref>
-        <a>About Me</a>
+        <a className={styles.navLink}>About Me</a>
       </Link>
       <Link href="/projects" passHref>
-        <a>Projects</a>
+        <a className={styles.navLink}>Projects</a>
       </Link>
       <Link href="/contact" passHref>
-        <a>Contact</a>
+        <a className={styles.navLink}>Contact</a>
       </Link>
     </nav>
   );
