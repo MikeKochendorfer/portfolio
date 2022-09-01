@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import Header from "./Header";
 import styles from "../styles/LayoutStyles.module.css";
+import Footer from "./Footer";
 
 interface LayoutProps {
   children: ReactNode;
@@ -12,7 +13,8 @@ export default function Layout({ children }: LayoutProps): JSX.Element {
     <>
       <div className={styles.container}>
         <Header />
-        {children}
+        <div className={styles.content}>{children}</div>
+        <Footer />
       </div>
     </>
   );
