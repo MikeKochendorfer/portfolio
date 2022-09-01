@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import Header from "./Header";
+import styles from "../styles/LayoutStyles.module.css";
 
 interface LayoutProps {
   children: ReactNode;
@@ -9,8 +10,10 @@ interface LayoutProps {
 export default function Layout({ children }: LayoutProps): JSX.Element {
   return (
     <>
-      <Header />
-      {children}
+      <div className={styles.container}>
+        <Header />
+        {children}
+      </div>
     </>
   );
 }
