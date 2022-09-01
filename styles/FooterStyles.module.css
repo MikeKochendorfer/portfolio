@@ -1,0 +1,13 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  align-items: center;
+}
+
+.socialIcon {
+  width: 44px;
+  position: relative;
+}
