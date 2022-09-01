@@ -1,0 +1,24 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  max-width: 750px;
+}
+
+.content {
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+} 
+
+.callToAction {
+  max-width: 100%;
+  display: flex;
+  gap: .8rem;
+  flex-wrap: wrap;
+}
+
+.callToAction button {
+  flex-grow: 1;
+}
