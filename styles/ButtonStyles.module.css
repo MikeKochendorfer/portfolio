@@ -13,17 +13,25 @@
 .primary {
   color: #fff;
   background: #8b49ff;
+  background: linear-gradient(to left, #8b49ff 50%, #5214cb 50%);
+  background-size: 200%;
+  background-position: right;
+  transition: all 0.2s ease-in-out;
 }
 .primary:hover {
-  background: #5214cb;
+  background-position: left;
 }
 
 /* Secondary button styles */
 .secondary {
   background: #fff;
   border: 2px solid #8b49ff;
+  background: linear-gradient(to left, #fff 50%, #8b49ff 50%);
+  background-size: 200%;
+  background-position: right;
+  transition: all 0.2s ease-in-out;
 }
 .secondary:hover {
   color: #fff;
-  background: #8b49ff
+  background-position: left;
 }
