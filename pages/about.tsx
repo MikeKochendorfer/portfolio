@@ -1,3 +1,5 @@
+import About from "../components/About";
+
 export default function AboutPage(): JSX.Element {
-  return <h1>About</h1>;
+  return <About />;
 }
