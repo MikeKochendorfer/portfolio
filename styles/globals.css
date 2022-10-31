@@ -9,16 +9,18 @@ body {
 h1 {
   font-size: 2.75rem;
   font-weight: 800;
+  color: #443a55;
 }
 
 p {
   font-size: 1.25rem;
   font-weight: 300;
   line-height: 1.8;
+  color: #5e5272;
 }
 
 a {
-  color: inherit;
+  color: #443a55;
   text-decoration: none;
 }
 
