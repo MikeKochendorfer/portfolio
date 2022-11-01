@@ -1,0 +1,27 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+  margin: 3rem;
+  gap: 3rem;
+  border-radius: 4rem;
+  box-shadow: rgba(50,50,93,0.24) 0px 50px 100px -20px, rgba(0,0,0,0.3) 0px 30px 60px -30px, rgba(10,37,64,0.35) 0px -2px 6px 0px inset;
+}
+
+.main img {
+  border: none;
+  width: 370px;
+  height: 370px;
+}
+
+.textContent {
+  padding: 2rem 0;
+  max-width: 950px;
+}
+
+.textContent a {
+  text-decoration: underline;
+  color: #5214cb;
+}
