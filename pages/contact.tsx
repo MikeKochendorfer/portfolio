@@ -1,3 +1,9 @@
+import Contact from "../components/Contact";
+
 export default function ContactPage(): JSX.Element {
-  return <h1>Contact</h1>;
+  return (
+    <>
+      <Contact />
+    </>
+   );
 }

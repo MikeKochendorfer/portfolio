@@ -1,0 +1,69 @@
+.contactWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+  margin: 3rem;
+  max-width: 900px;
+  width: 100%;
+  justify-items: center;
+  border-radius: 4rem;
+  box-shadow: rgba(50,50,93,0.24) 0px 50px 100px -20px, rgba(0,0,0,0.3) 0px 30px 60px -30px, rgba(10,37,64,0.35) 0px -2px 6px 0px inset;
+}
+
+.contactWrapper h1 {
+  align-self: center;
+}
+
+.contactWrapper form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 650px;
+  min-width: 370px;
+  align-self: center;
+}
+
+.contactWrapper fieldset {
+  border: none;
+  margin-top: 1rem;
+}
+
+.contactWrapper legend {
+  color: #443a55;
+  margin-bottom: .25rem;
+}
+.radioGroup {
+  border: 1px solid #443a55;
+  border-radius: .25rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  padding: .5rem;
+  color: #5e5272
+}
+.radioGroup label {
+  padding-left: 1rem
+}
+
+.contactWrapper input, .contactWrapper textarea {
+  padding: .5rem;
+  font-size: 1.15rem;
+  justify-self: center;
+  border: 1px solid #443a55;
+  border-radius: .25rem;
+  color: #5e5272;
+}
+
+.contactWrapper label {
+  margin-top: 1rem;
+  margin-bottom: .25rem;
+  color: #443a55;
+}
+
+.contactWrapper button {
+  margin: 2rem 0;
+  padding: 1rem;
+  border-radius: .25rem;
+}
