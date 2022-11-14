@@ -1,0 +1,44 @@
+/* eslint-disable @next/next/no-img-element */
+import styles from "../styles/ProjectCardStyles.module.css";
+
+interface Props {
+  title: string;
+  description: string;
+  imgURL: string;
+  repo?: string;
+  url?: string;
+  keyTech: string;
+}
+
+export default function ProjectCard({
+  title,
+  description,
+  imgURL,
+  keyTech,
+  repo,
+  url,
+}: Props): JSX.Element {
+  return (
+    <div className={styles.cardWrapper}>
+      <img src={imgURL} alt={title} />
+      <div className={styles.details}>
+        <h2>{title}</h2>
+        <p>{description}</p>
+        <p>
+          <span>Key technologies: </span>
+          {keyTech}
+        </p>
+        {url && (
+          <a href={url} target="_blank" rel="noopener noreferrer">
+            View the live site
+          </a>
+        )}
+        {repo && (
+          <a href={repo} target="_blank" rel="noopener noreferrer">
+            View the code on GitHub
+          </a>
+        )}
+      </div>
+    </div>
+  );
+}
