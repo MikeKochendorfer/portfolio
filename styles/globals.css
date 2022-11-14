@@ -6,10 +6,17 @@ body {
   font-family: 'Sora', sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #443a55;
+}
+
 h1 {
   font-size: 2.75rem;
   font-weight: 800;
-  color: #443a55;
+}
+
+h2 {
+  font-size: 2.25rem;
 }
 
 p {
