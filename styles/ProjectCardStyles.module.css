@@ -13,12 +13,8 @@
 
 .cardWrapper img {
   max-width: 50%;
-  width: 100%;
-  max-height: 500px;
-  height: 100%;
-  min-width: 360px;
   object-fit: cover;
-  object-position: top left;
+  object-position: top center;
   border: 1px solid rgba(108, 107, 107, 0.1);
   box-shadow: rgba(108, 107, 107, 0.1) 16px 16px 16px;
 }
@@ -37,4 +33,17 @@
 
 .details span {
   font-weight: 600;
+}
+
+@media (max-width: 1000px) {
+  .cardWrapper {
+    display: grid;
+    max-width: 600px;
+  }
+
+  .cardWrapper img {
+    place-self: center;
+    max-width: 700px;
+    max-width: 100%;
+  }
 }
