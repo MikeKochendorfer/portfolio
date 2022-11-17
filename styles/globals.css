@@ -45,3 +45,11 @@ strong {
   margin: 0;
   padding: 0;
 }
+
+@media (max-width: 650px) {
+  strong {
+    color:#8b49ff;
+    background-color: #8b49ff;
+    -webkit-text-fill-color: #8b49ff;
+  }
+}
