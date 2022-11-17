@@ -1,6 +1,7 @@
 import Avatar from "./Avatar";
 import Button from "./Button";
 import styles from "../styles/IntroCardStyles.module.css";
+import Router from "next/router";
 
 export default function IntroCard(): JSX.Element {
   return (
@@ -23,13 +24,13 @@ export default function IntroCard(): JSX.Element {
         <div className={styles.callToAction}>
           <Button
             variant={"primary"}
-            buttonText={"I need a website"}
-            onClick={() => console.log("client wants a website")}
+            buttonText={"Contact Me"}
+            onClick={() => Router.push('/contact')}
           />
           <Button
             variant={"primary"}
-            buttonText={"I'm looking to hire"}
-            onClick={() => console.log("client is hiring")}
+            buttonText={"View Projects"}
+            onClick={() => Router.push('/projects')}
           />
         </div>
       </div>
