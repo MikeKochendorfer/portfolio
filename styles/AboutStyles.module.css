@@ -27,3 +27,16 @@
   text-decoration: underline;
   color: #5214cb;
 }
+
+@media (max-width: 550px) {
+  .main {
+    box-shadow: none;
+    padding: 3rem 2rem;
+    margin: 3rem 0
+  }
+
+  .main img {
+    max-width: 315px;
+    max-height: 315px;
+  }
+}
