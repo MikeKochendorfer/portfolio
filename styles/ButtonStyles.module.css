@@ -18,9 +18,6 @@
   background-position: right;
   transition: all 0.2s ease-in-out;
 }
-.primary:hover {
-  background-position: left;
-}
 
 /* Secondary button styles */
 .secondary {
@@ -31,11 +28,20 @@
   background-position: right;
   transition: all 0.2s ease-in-out;
 }
-.secondary:hover {
-  color: #fff;
-  background-position: left;
+
+/* Hover styles */
+@media (hover: hover) and (pointer: fine) {
+  .primary:hover {
+    background-position: left;
+  }
+
+  .secondary:hover {
+    color: #fff;
+    background-position: left;
+  }
 }
 
+/* Mobile styles */
 @media (max-width: 850px) {
   .primary, .secondary {
     padding: .75rem 1rem;
