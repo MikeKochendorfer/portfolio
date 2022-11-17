@@ -5,7 +5,7 @@
   font-size: 1rem;
   font-weight: 600;
   padding: .5rem 1rem;
-  border-radius: 1rem;
+  border-radius: 2rem;
   text-transform: capitalize;
 }
 
@@ -34,4 +34,10 @@
 .secondary:hover {
   color: #fff;
   background-position: left;
+}
+
+@media (max-width: 850px) {
+  .primary, .secondary {
+    padding: .75rem 1rem;
+  }
 }
