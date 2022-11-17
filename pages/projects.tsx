@@ -39,7 +39,7 @@ export default function ProjectsPage(): JSX.Element {
         }
         imgURL={"./sick-fits/sickfits.png"}
         keyTech={
-          "Next.js, Apollo GraphQL, Styled Components, Jest, Node.js, TypeScript"
+          "Next.js, Apollo GraphQL, Styled Components, Jest, Node.js, TypeScript, MongoDB"
         }
       />
     </div>
