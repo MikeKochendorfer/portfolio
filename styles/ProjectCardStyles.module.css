@@ -35,6 +35,12 @@
   font-weight: 600;
 }
 
+@media (hover: hover) and (pointer: fine) {
+  .details a:hover {
+    background: rgba(108, 107, 107, 0.2)
+  }
+}
+
 @media (max-width: 1000px) {
   .cardWrapper {
     display: grid;
