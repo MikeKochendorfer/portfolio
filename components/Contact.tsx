@@ -7,18 +7,33 @@ export default function Contact(): JSX.Element {
     name: "",
     email: "",
     purpose: "",
-    description: ""
-  })
+    description: "",
+  });
 
-  function handleInput(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
+  function handleInput(
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) {
     let { name, value } = e.target;
-    setInputs({ ...inputs, [name]: value })
+    setInputs({ ...inputs, [name]: value });
   }
-  
+
+  async function handleSubmit() {
+    console.log("Hold on...sending that email...");
+
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(inputs),
+    });
+    console.log(res.status);
+  }
+
   return (
     <div className={styles.contactWrapper}>
       <h1>Contact</h1>
-      {/* <p>I would love to discuss the project or role you are looking to </p> */}
       <form method="post">
         <label htmlFor="name">Name/Company Name:</label>
         <input type="text" name="name" onChange={handleInput} />
@@ -31,7 +46,12 @@ export default function Contact(): JSX.Element {
 
           <div className={styles.radioGroup}>
             <div>
-              <input type="radio" name="purpose" value="I need a website" onChange={handleInput} />
+              <input
+                type="radio"
+                name="purpose"
+                value="I need a website"
+                onChange={handleInput}
+              />
               <label htmlFor="purpose">I need a website</label>
             </div>
 
@@ -48,27 +68,42 @@ export default function Contact(): JSX.Element {
             </div>
 
             <div>
-              <input type="radio" name="purpose" value="I am a designer" onChange={handleInput}/>
+              <input
+                type="radio"
+                name="purpose"
+                value="I am a designer"
+                onChange={handleInput}
+              />
               <label htmlFor="purpose">
                 I am a designer looking to collaborate
               </label>
             </div>
 
             <div>
-              <input type="radio" name="purpose" value="Other" onChange={handleInput}/>
+              <input
+                type="radio"
+                name="purpose"
+                value="Other"
+                onChange={handleInput}
+              />
               <label htmlFor="purpose">Other (please explain below)</label>
             </div>
           </div>
         </fieldset>
 
         <label htmlFor="description">Project or Role Description:</label>
-        <textarea name="description" cols={30} rows={10} onChange={handleInput}></textarea>
+        <textarea
+          name="description"
+          cols={30}
+          rows={10}
+          onChange={handleInput}
+        ></textarea>
         <Button
           buttonText={"Submit Form"}
           variant={"primary"}
           onClick={(e) => {
             e.preventDefault();
-            console.log(inputs);
+            handleSubmit();
           }}
         />
       </form>
