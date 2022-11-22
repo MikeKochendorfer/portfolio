@@ -30,7 +30,8 @@ export default function contact(req: NextApiRequest, res: NextApiResponse) {
       ],
     })
     .then((data) => {
-      if (data) res.status(200);
+      if (data.results.total_accepted_recipients > 0) res.status(200);
+      if (data.results.total_rejected_recipients > 0) res.status(500);
     })
     .catch((err) => {
       console.log(err);

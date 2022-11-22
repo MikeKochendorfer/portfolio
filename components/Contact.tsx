@@ -41,7 +41,7 @@ export default function Contact(): JSX.Element {
     });
     if (res.status === 200) {
       window.alert(
-        "Your submission was successfull. Thank you for your interest in working together. Please give me a few days to get back to you."
+        "Your submission was successful. Thank you for your interest in working together. Please give me a few days to get back to you."
       );
     } else {
       window.alert(
