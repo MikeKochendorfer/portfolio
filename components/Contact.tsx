@@ -26,7 +26,6 @@ export default function Contact(): JSX.Element {
   }
 
   async function handleSubmit() {
-    console.log("Hold on...sending that email...");
     if (fieldsEmpty) {
       window.alert("Please fill out all fields before submitting the form.");
       return;
@@ -40,7 +39,6 @@ export default function Contact(): JSX.Element {
       },
       body: JSON.stringify(inputs),
     });
-    console.log(res.status);
     if (res.status === 200) {
       window.alert(
         "Your submission was successfull. Thank you for your interest in working together. Please give me a few days to get back to you."
