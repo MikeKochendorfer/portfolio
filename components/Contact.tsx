@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "../styles/ContactStyles.module.css";
 import Button from "./Button";
 
@@ -10,6 +10,14 @@ export default function Contact(): JSX.Element {
     description: "",
   });
 
+  const [descriptionLength, setDescriptionLength] = useState(0);
+  useEffect(() => {
+    setDescriptionLength(inputs.description.length);
+  }, [inputs]);
+
+  const fieldsEmpty =
+    inputs.name.length < 1 || inputs.email.length < 1 || descriptionLength < 1;
+
   function handleInput(
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) {
@@ -19,6 +27,10 @@ export default function Contact(): JSX.Element {
 
   async function handleSubmit() {
     console.log("Hold on...sending that email...");
+    if (fieldsEmpty) {
+      window.alert("Please fill out all fields before submitting the form.");
+      return;
+    }
 
     const res = await fetch("/api/contact", {
       method: "POST",
@@ -29,6 +41,15 @@ export default function Contact(): JSX.Element {
       body: JSON.stringify(inputs),
     });
     console.log(res.status);
+    if (res.status === 200) {
+      window.alert(
+        "Your submission was successfull. Thank you for your interest in working together. Please give me a few days to get back to you."
+      );
+    } else {
+      window.alert(
+        "Something went wrong with your form submission. Please review your details or try again later."
+      );
+    }
   }
 
   return (
@@ -36,10 +57,22 @@ export default function Contact(): JSX.Element {
       <h1>Contact</h1>
       <form method="post">
         <label htmlFor="name">Name/Company Name:</label>
-        <input type="text" name="name" onChange={handleInput} />
+        <input
+          type="text"
+          name="name"
+          required
+          maxLength={100}
+          onChange={handleInput}
+        />
 
         <label htmlFor="email">Email:</label>
-        <input type="email" name="email" onChange={handleInput} />
+        <input
+          type="email"
+          name="email"
+          required
+          maxLength={100}
+          onChange={handleInput}
+        />
 
         <fieldset>
           <legend>How can I help you?</legend>
@@ -91,12 +124,16 @@ export default function Contact(): JSX.Element {
           </div>
         </fieldset>
 
-        <label htmlFor="description">Project or Role Description:</label>
+        <label htmlFor="description">
+          Project or Role Description: ({descriptionLength}/1000)
+        </label>
         <textarea
           name="description"
           cols={30}
           rows={10}
           onChange={handleInput}
+          required
+          maxLength={1000}
         ></textarea>
         <Button
           buttonText={"Submit Form"}
