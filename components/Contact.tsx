@@ -43,6 +43,12 @@ export default function Contact(): JSX.Element {
       window.alert(
         "Your submission was successful. Thank you for your interest in working together. Please give me a few days to get back to you."
       );
+      setInputs({
+        name: "",
+        email: "",
+        purpose: "",
+        description: "",
+      })
     } else {
       window.alert(
         "Something went wrong with your form submission. Please review your details or try again later."
@@ -60,6 +66,7 @@ export default function Contact(): JSX.Element {
           name="name"
           required
           maxLength={100}
+          value={inputs.name}
           onChange={handleInput}
         />
 
@@ -69,6 +76,7 @@ export default function Contact(): JSX.Element {
           name="email"
           required
           maxLength={100}
+          value={inputs.email}
           onChange={handleInput}
         />
 
@@ -132,6 +140,7 @@ export default function Contact(): JSX.Element {
           onChange={handleInput}
           required
           maxLength={1000}
+          value={inputs.description}
         ></textarea>
         <Button
           buttonText={"Submit Form"}
