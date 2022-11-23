@@ -1,13 +1,13 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import SparkPost from "sparkpost";
 
-export default function contact(req: NextApiRequest, res: NextApiResponse) {
+export default async function contact(req: NextApiRequest, res: NextApiResponse) {
   const client = new SparkPost(process.env.SPARKPOST_API_KEY);
 
   const body = req.body;
   const { name, email, purpose, description } = body;
 
-  client.transmissions
+  await client.transmissions
     .send({
       content: {
         from: `${process.env.SENDER}`,
