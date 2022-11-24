@@ -10,7 +10,9 @@ export default function ProjectsPage(): JSX.Element {
         description={
           "A responsive landing page for a fictional landscaping company."
         }
-        imgURL={"./lucky-shrub/lucky-shrub.png"}
+        imgURL={
+          "https://res.cloudinary.com/dfkgccmba/image/upload/v1669317789/portfolio/lucky-shrub_ddwaev.png"
+        }
         keyTech={"HTML, CSS"}
         repo={"https://github.com/MikeKochendorfer/lucky-shrub"}
         url={"https://mikekochendorfer.github.io/lucky-shrub/"}
@@ -20,7 +22,9 @@ export default function ProjectsPage(): JSX.Element {
         description={
           "A full-stack Ecommerce site with an administrative CMS for product and shipping management."
         }
-        imgURL={"./verdeamor/verdeamor.png"}
+        imgURL={
+          "https://res.cloudinary.com/dfkgccmba/image/upload/v1669317802/portfolio/verdeamor_cmgwhd.png"
+        }
         keyTech={"Next.js, GraphQL, Keystone.js, Stripe, PostgreSQL"}
       />
       <ProjectCard
@@ -28,7 +32,9 @@ export default function ProjectsPage(): JSX.Element {
         description={
           "A single page application for finding a good style of wine to pair with the food of your choosing."
         }
-        imgURL={"wine-pairing.png"}
+        imgURL={
+          "https://res.cloudinary.com/dfkgccmba/image/upload/v1669317853/portfolio/wine-pairing_fyfbq2.png"
+        }
         keyTech={"Next.js, Serverless functions, Third-Party API"}
         repo={"https://github.com/MikeKochendorfer/wine-pairing-app"}
       />
@@ -37,7 +43,9 @@ export default function ProjectsPage(): JSX.Element {
         description={
           "A fully featured Ecommerce site with user authentication, product management, pagination, and much more."
         }
-        imgURL={"./sick-fits/sickfits.png"}
+        imgURL={
+          "https://res.cloudinary.com/dfkgccmba/image/upload/v1669317813/portfolio/sickfits_p4zdah.png"
+        }
         keyTech={
           "Next.js, Apollo GraphQL, Styled Components, Jest, Node.js, TypeScript, MongoDB"
         }

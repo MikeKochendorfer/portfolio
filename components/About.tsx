@@ -9,7 +9,7 @@ export default function About(): JSX.Element {
     <main className={styles.main}>
       <h1>About Me</h1>
       <Avatar
-        imageSrc="/about-me.JPG"
+        imageSrc="https://res.cloudinary.com/dfkgccmba/image/upload/v1669317766/portfolio/about-me_q2drhb.jpg"
         hasAnimatedBorder={false}
         altText="Picture of Michael Kochendorfer"
       />
