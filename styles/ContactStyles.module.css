@@ -74,7 +74,8 @@
 @media (max-width: 550px) {
   .contactWrapper {
     box-shadow: none;
-    padding: 2rem .5rem;
+    padding: 0 .5rem;
+    margin: 2.5rem;
     max-width: 90%;
   }
 }

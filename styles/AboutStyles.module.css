@@ -31,8 +31,8 @@
 @media (max-width: 550px) {
   .main {
     box-shadow: none;
-    padding: 3rem 2rem;
-    margin: 3rem 0
+    padding: 0 2rem;
+    margin: 2.5rem 0;
   }
 
   .main img {
