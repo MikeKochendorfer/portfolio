@@ -58,6 +58,13 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="author" content="Michael Kochendorfer" />
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <meta
+          property="og:title"
+          content={`Michael Kochendorfer | ${
+            path.charAt(0).toUpperCase() + path.slice(1)
+          }`}
+        />
       </Head>
       <Component {...pageProps} />
     </Layout>

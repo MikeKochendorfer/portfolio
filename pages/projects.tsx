@@ -1,9 +1,26 @@
+import Head from "next/head";
 import ProjectCard from "../components/ProjectCard";
 import styles from "../styles/ProjectsPage.module.css";
 
 export default function ProjectsPage(): JSX.Element {
   return (
     <div className={styles.wrapper}>
+      <Head>
+        <meta
+          name="description"
+          content="Sample work and client projects built by Michael Kochendorfer."
+        />
+
+        <meta
+          property="og:description"
+          content="Sample work and client projects built by Michael Kochendorfer."
+        />
+
+        <meta
+          property="og:image"
+          content="https://res.cloudinary.com/dfkgccmba/image/upload/v1669327564/portfolio/portfolio-thumbnail_zw8fcc.png"
+        />
+      </Head>
       <h1>Projects</h1>
       <ProjectCard
         title={"Lucky Shrub"}
