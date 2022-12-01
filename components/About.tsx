@@ -19,11 +19,9 @@ export default function About(): JSX.Element {
           modern technologies like React, Next.js, and GraphQL. I like to keep
           up with the latest trends in technology and consider myself a
           life-long learner.{" "}
-          <strong>
-            I find value in helping others accomplish their goals.
-          </strong>{" "}
-          I am a listener and an achiever; I would love to hear what you are
-          trying to accomplish. If you need a website or your company is hiring
+          <b>I find value in helping others accomplish their goals.</b> I am a
+          listener and an achiever; I would love to hear what you are trying to
+          accomplish. If you need a website or your company is hiring
           developers, please don&apos;t hesitate to{" "}
           <Link href={"/contact"} passHref>
             <a>get in touch.</a>

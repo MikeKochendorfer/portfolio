@@ -28,6 +28,10 @@
   color: #5214cb;
 }
 
+.textContent b {
+  color: #8b49ff;
+}
+
 @media (max-width: 550px) {
   .main {
     box-shadow: none;
