@@ -5,6 +5,9 @@
   gap: 4rem;
   align-items: center;
   margin-bottom: 8rem;
+  background: #c9c7cd24;
+  min-height: 500px;
+  padding: 1rem;
 }
 
 .cardWrapper:nth-of-type(even) {
@@ -33,6 +36,10 @@
 
 .details span {
   font-weight: 600;
+}
+
+.notOnline {
+  font-size: .85rem
 }
 
 @media (hover: hover) and (pointer: fine) {
