@@ -18,10 +18,13 @@ export default function About(): JSX.Element {
           Hi, I&apos;m Mike 👋. I provide custom web development with a focus on
           modern technologies like React, Next.js, and GraphQL. I like to keep
           up with the latest trends in technology and consider myself a
-          life-long learner. I find value in helping others accomplish their
-          goals. I am a listener and an achiever; I would love to hear what you
-          are trying to accomplish. If you need a website or your company is
-          hiring developers, please don&apos;t hesitate to{" "}
+          life-long learner.{" "}
+          <strong>
+            I find value in helping others accomplish their goals.
+          </strong>{" "}
+          I am a listener and an achiever; I would love to hear what you are
+          trying to accomplish. If you need a website or your company is hiring
+          developers, please don&apos;t hesitate to{" "}
           <Link href={"/contact"} passHref>
             <a>get in touch.</a>
           </Link>{" "}
