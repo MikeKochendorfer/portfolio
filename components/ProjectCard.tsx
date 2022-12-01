@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
 import styles from "../styles/ProjectCardStyles.module.css";
 
 interface Props {
@@ -37,6 +38,17 @@ export default function ProjectCard({
           <a href={repo} target="_blank" rel="noopener noreferrer">
             View the code on GitHub
           </a>
+        )}
+        {!url && (
+          <>
+            <Link href="/contact" passHref>
+              <a>Contact me for a demo</a>
+            </Link>
+            <p className={styles.notOnline}>
+              *This site is not online, but I would be happy to show a demo upon
+              request.
+            </p>
+          </>
         )}
       </div>
     </div>
