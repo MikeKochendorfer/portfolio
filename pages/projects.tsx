@@ -54,6 +54,7 @@ export default function ProjectsPage(): JSX.Element {
         }
         keyTech={"Next.js, Serverless functions, Third-Party API"}
         repo={"https://github.com/MikeKochendorfer/wine-pairing-app"}
+        url={"wine-pairing-app-qga9-f44evyx3y-mikekochendorfer.vercel.app"}
       />
       <ProjectCard
         title={"SICK FITS"}
