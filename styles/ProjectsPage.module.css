@@ -11,6 +11,6 @@
 @media (max-width: 550px) {
   .wrapper {
     margin: 1rem;
-    padding-bottom: 0;
+    padding: 0;
   }
 }
