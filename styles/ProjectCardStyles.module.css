@@ -32,6 +32,8 @@
   background:rgba(108, 107, 107, 0.1);
   padding: .5rem;
   width: fit-content;
+  border: 1px solid #443a55;
+  border-radius: .25rem;
 }
 
 .details span {
