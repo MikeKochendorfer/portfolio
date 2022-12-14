@@ -35,6 +35,18 @@ export default function ProjectsPage(): JSX.Element {
         url={"https://mikekochendorfer.github.io/lucky-shrub/"}
       />
       <ProjectCard
+        title={"QR Code Generator"}
+        description={
+          "A simple tool for generating a QR code which can be downloaded and used."
+        }
+        imgURL={
+          "https://res.cloudinary.com/dfkgccmba/image/upload/v1671057014/portfolio/qr-code-generator_wm4ve2.png"
+        }
+        keyTech={"TypeScript, Next.js"}
+        repo={"https://github.com/MikeKochendorfer/qr-code-generator"}
+        url={"qr-code-generator-mike-k.vercel.app"}
+      />
+      <ProjectCard
         title={"Ver.De.Amor"}
         description={
           "A full-stack Ecommerce site with an administrative CMS for product and shipping management."
