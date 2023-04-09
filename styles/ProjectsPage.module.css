@@ -1,11 +1,21 @@
 .wrapper {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  display: grid;
   align-items: center;
   margin-bottom: 3rem;
-  margin: 3rem 1rem;
+  margin: 3rem 5rem;
   gap: 4rem;
   padding: 1.5rem;
+}
+
+.wrapper h1 {
+  place-self: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  gap: 2rem;
 }
 
 @media (max-width: 550px) {
