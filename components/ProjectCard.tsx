@@ -29,27 +29,30 @@ export default function ProjectCard({
           <span>Key technologies: </span>
           {keyTech}
         </p>
-        {url && (
-          <a href={url} target="_blank" rel="noopener noreferrer">
-            View the live site
-          </a>
-        )}
-        {repo && (
-          <a href={repo} target="_blank" rel="noopener noreferrer">
-            View the code on GitHub
-          </a>
-        )}
-        {!url && (
-          <>
-            <Link href="/contact" passHref>
-              <a>Contact me for a demo</a>
-            </Link>
-            <p className={styles.notOnline}>
-              *This site is not online, but I would be happy to show a demo upon
-              request.
-            </p>
-          </>
-        )}
+        <div className={styles.buttonWrapper}>
+          {url && (
+            <a href={url} target="_blank" rel="noopener noreferrer">
+              View the live site
+            </a>
+          )}
+          {repo && (
+            <a href={repo} target="_blank" rel="noopener noreferrer">
+              View the code on GitHub
+            </a>
+          )}
+
+          {!url && (
+            <>
+              <Link href="/contact" passHref>
+                <a>Contact me for a demo</a>
+              </Link>
+              <p className={styles.notOnline}>
+                *This site is not online, but I would be happy to show a demo
+                upon request.
+              </p>
+            </>
+          )}
+        </div>
       </div>
     </div>
   );
