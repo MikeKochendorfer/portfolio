@@ -48,16 +48,6 @@ export default function ProjectsPage(): JSX.Element {
           url={"qr-code-generator-mike-k.vercel.app"}
         />
         <ProjectCard
-          title={"Ver.De.Amor"}
-          description={
-            "A full-stack Ecommerce site with an administrative CMS for product and shipping management."
-          }
-          imgURL={
-            "https://res.cloudinary.com/dfkgccmba/image/upload/v1669317802/portfolio/verdeamor_cmgwhd.png"
-          }
-          keyTech={"Next.js, GraphQL, Keystone.js, Stripe, PostgreSQL"}
-        />
-        <ProjectCard
           title={"Wine Pairing App"}
           description={
             "A single page application for finding a good style of wine to pair with the food of your choosing."
@@ -68,6 +58,16 @@ export default function ProjectsPage(): JSX.Element {
           keyTech={"Next.js, Serverless functions, Third-Party API"}
           repo={"https://github.com/MikeKochendorfer/wine-pairing-app"}
           url={"https://wine-pairing-app-qga9.vercel.app/"}
+        />
+        <ProjectCard
+          title={"Ver.De.Amor"}
+          description={
+            "A full-stack Ecommerce site with an administrative CMS for product and shipping management."
+          }
+          imgURL={
+            "https://res.cloudinary.com/dfkgccmba/image/upload/v1669317802/portfolio/verdeamor_cmgwhd.png"
+          }
+          keyTech={"Next.js, GraphQL, Keystone.js, Stripe, PostgreSQL"}
         />
         <ProjectCard
           title={"SICK FITS"}
