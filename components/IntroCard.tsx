@@ -13,14 +13,8 @@ export default function IntroCard(): JSX.Element {
       />
 
       <div className={styles.content}>
-        <h1>Hello, World.</h1>
-        <p>
-          I&apos;m Mike: a Frontend <strong>JavaScript Developer</strong> here
-          to help you achieve your goals. Do you need a{" "}
-          <strong>custom website</strong> for your business or personal project?
-          Are you or your company <strong>hiring developers?</strong> Let&apos;s
-          talk.
-        </p>
+        <h1>Custom Websites for Businesses and Individuals</h1>
+        <p>Need a high-performance <strong>custom website</strong> for your business or personal project? As an experienced frontend <strong>JavaScript</strong> and <strong>React</strong> developer, I can create responsive and user-friendly websites that drive results. Let&apos;s turn your ideas into reality.</p>
         <div className={styles.callToAction}>
           <Button
             variant={"primary"}
@@ -29,7 +23,7 @@ export default function IntroCard(): JSX.Element {
           />
           <Button
             variant={"primary"}
-            buttonText={"View Projects"}
+            buttonText={"View My Projects"}
             onClick={() => Router.push('/projects')}
           />
         </div>
