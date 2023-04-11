@@ -24,7 +24,7 @@ export default function About(): JSX.Element {
         </p>
         <br />
         <p>
-          As a life-long learner, I'm committed to staying up-to-date with the
+          As a life-long learner, I&apos;m committed to staying up-to-date with the
           latest trends and tools in web development. I pride myself on my
           ability to listen to clients&apos; needs, understand their goals, and
           create customized solutions that deliver results.
@@ -32,7 +32,7 @@ export default function About(): JSX.Element {
         <br />
         <p>
           If you&apos;re looking for a developer who is passionate, dedicated, and
-          willing to work closely with you to bring your vision to life, I'm
+          willing to work closely with you to bring your vision to life, I&apos;m
           here to help. Let&apos;s discuss your project and see how I can support you
           in achieving your objectives.
         </p>
