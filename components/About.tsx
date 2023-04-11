@@ -15,40 +15,27 @@ export default function About(): JSX.Element {
       />
       <div className={styles.textContent}>
         <p>
-          Hi, I&apos;m Mike 👋. I provide custom web development with a focus on
-          modern technologies like React, Next.js, and GraphQL. I like to keep
-          up with the latest trends in technology and consider myself a
-          life-long learner.{" "}
-          <b>I find value in helping others accomplish their goals.</b> I am a
-          listener and an achiever; I would love to hear what you are trying to
-          accomplish. If you need a website or your company is hiring
-          developers, please don&apos;t hesitate to{" "}
-          <Link href={"/contact"} passHref>
-            <a>get in touch.</a>
-          </Link>{" "}
-          If you would like to get to know me a bit more first, keep
-          reading...👀
+          Hi, I&apos;m Mike 👋, a front-end developer with a passion for modern
+          technologies like React, Next.js, and GraphQL. I&apos;m dedicated to
+          creating custom websites that meet the unique needs of businesses and
+          individuals. With over three years of coding experience and a passion
+          for web development, I&apos;m eager to apply my skills and knowledge
+          to create websites that exceed client expectations.
         </p>
         <br />
         <p>
-          I grew up in the suburbs of Chicago, moved to Los Angeles to pursue a
-          Master&apos;s degree, got married, and have spent the last few years
-          in Chihuahua, Mexico with my wife who was born here. I value diversity
-          and believe that difference in unity can bring about beautiful,
-          useful, and equitable things in our world. I love to have new
-          experiences whether it be trying a new restaurant, visiting a new
-          city, getting a great music recommendation, or reading/watching an
-          exciting, new mind-bending series.
+          As a life-long learner, I'm committed to staying up-to-date with the
+          latest trends and tools in web development. I pride myself on my
+          ability to listen to clients&apos; needs, understand their goals, and
+          create customized solutions that deliver results.
         </p>
         <br />
         <p>
-          I&apos;m a bit of a nerd 🖖. I tend to be introspective and
-          introverted, but I can also talk for hours about the things I enjoy.
-          In my free time, you can find me playing guitar, walking out in
-          nature, or playing board games with some good friends.
+          If you&apos;re looking for a developer who is passionate, dedicated, and
+          willing to work closely with you to bring your vision to life, I'm
+          here to help. Let&apos;s discuss your project and see how I can support you
+          in achieving your objectives.
         </p>
-        <br />
-        <p>Enough about me...Let&apos;s build something great together 🚀</p>
         <br />
         <Button
           variant={"primary"}
