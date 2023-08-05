@@ -51,7 +51,7 @@
 }
 
 .notOnline {
-  font-size: .85rem
+  font-size: .85rem !important;
 }
 
  @media (hover: hover) and (pointer: fine) {
