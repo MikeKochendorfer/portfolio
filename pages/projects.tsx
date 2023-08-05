@@ -45,7 +45,7 @@ export default function ProjectsPage(): JSX.Element {
           }
           keyTech={"TypeScript, Next.js"}
           repo={"https://github.com/MikeKochendorfer/qr-code-generator"}
-          url={"qr-code-generator-mike-k.vercel.app"}
+          url={"https://qr-code-generator-mike-k.vercel.app"}
         />
         <ProjectCard
           title={"Wine Pairing App"}
