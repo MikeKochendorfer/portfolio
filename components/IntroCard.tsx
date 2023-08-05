@@ -8,7 +8,7 @@ export default function IntroCard(): JSX.Element {
     <div className={styles.container}>
       <Avatar
         hasAnimatedBorder
-        imageSrc="https://res.cloudinary.com/dfkgccmba/image/upload/v1669317757/portfolio/portfolio-picture_srzyus.jpg"
+        imageSrc="https://res.cloudinary.com/dfkgccmba/image/upload/v1691180278/portfolio/headshot-600_ixcfks.png"
         altText="Michael Kochendorfer"
       />
 
